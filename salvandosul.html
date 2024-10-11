@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<title>SankeyID31b4598e5c2c</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- Sankey generated in R 4.3.2 by googleVis 0.7.1 package -->
+<!-- Thu Apr 18 14:07:29 2024 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataSankeyID31b4598e5c2c () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Itararé",
+"ITA",
+24.30654926
+],
+[
+"Itapeva",
+"ITR",
+2.70571286
+],
+[
+"Quatro Barras",
+"ITR",
+82.86341229
+],
+[
+"Itararé",
+"QTB",
+19.37600567
+],
+[
+"Irati",
+"QTB",
+53.77286263
+],
+[
+"Irati (tardio)",
+"QTB",
+74.27791281
+],
+[
+"Quatro Barras",
+"IRA",
+58.41053851
+],
+[
+"Irati (tardio)",
+"IRA",
+1.444609417
+],
+[
+"Tres Barras",
+"IRA",
+61.14655415
+],
+[
+"Quatro Barras",
+"IRT",
+64.27926049
+],
+[
+"Irati",
+"IRT",
+2.517380246
+],
+[
+"Tres Barras",
+"IRT",
+75.0405336
+],
+[
+"Irati",
+"TRB",
+53.4107463
+],
+[
+"Irati (tardio)",
+"TRB",
+73.500342
+],
+[
+"Cacador",
+"TRB",
+41.33076365
+],
+[
+"Tres Barras",
+"CAC",
+98.13790062
+],
+[
+"Chapeco",
+"CAC",
+47.24817674
+],
+[
+"Cacador",
+"CHA",
+42.8095026
+] 
+];
+data.addColumn('string','From');
+data.addColumn('string','to');
+data.addColumn('number','Mn');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartSankeyID31b4598e5c2c() {
+var data = gvisDataSankeyID31b4598e5c2c();
+var options = {};
+options["width"] = 1200;
+options["height"] = 600;
+options["sankey"] = {
+        link: { colorMode: 'source',
+                colors: ['#00008b','hotpink','#5f9ea0','#bc8f8f','#40e0d0','#E41A1C','#8b5742','#6a5acd'] },
+         node: { colors: ['#00008b','hotpink','hotpink','#00008b','#5f9ea0','#5f9ea0','#bc8f8f','#40e0d0','#bc8f8f','#E41A1C','#40e0d0','#E41A1C','#8b5742','#8b5742','#6a5acd','#6a5acd'],
+              nodePadding:0,
+              width: 7,
+              label: { fontName: 'Times-Roman',
+        fontSize: 18,
+        bold: true,
+        italic: true } }
+      };
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID31b4598e5c2c')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID31b4598e5c2c);
+})();
+function displayChartSankeyID31b4598e5c2c() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID31b4598e5c2c"></script>
+ 
+<!-- divChart -->
+  
+<div id="SankeyID31b4598e5c2c" 
+  style="width: 1200; height: 600;">
+</div>
+ <div><span>Data: dat &#8226; Chart ID: <a href="Chart_SankeyID31b4598e5c2c.html">SankeyID31b4598e5c2c</a> &#8226; <a href="https://mages.github.io/googleVis/">googleVis-0.7.1</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 4.3.2 (2023-10-31 ucrt) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://developers.google.com/chart/interactive/docs/gallery/sankey">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
